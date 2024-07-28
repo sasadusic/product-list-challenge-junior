@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<script src="main.js" defer></script>
+</head>
+<body>
+<main class="main">
+<div class="left">
+
+  <h1 class="header">Desserts</h1>
+
+  <div class="grid">
+
+    <div class="item">
+      <picture class="item-image">
+        <source srcset="assets/images/image-waffle-mobile.jpg" media="(max-width: 992px)">
+        <img src="assets/images/image-waffle-desktop.jpg" alt="" class="item-image" id="img-1">
+      </picture>
+      <div class="card-body">
+        <button class="btn add-btn" data-cake="Waffle"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+        <h2 class="title">Waffle</h2>
+        <p class="phar desc">Waffle with Berries</p>
+        <p class="phar price">6.50</p>
+      </div>
+    </div>
+    
+    <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-creme-brulee-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-creme-brulee-desktop.jpg" alt="item-image" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      
+      <button class="btn add-btn" data-cake="Crème Brûlée"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      <h2 class="title">Crème Brûlée</h2>
+      <p class="phar desc">Vanilla Bean Crème Brûlée</p>
+      <p class="phar price">7.00</p>
+    </div>
+  </div>
+  
+  <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-macaron-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-macaron-desktop.jpg" alt="" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      
+      <button class="btn add-btn" data-cake="Macaron"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      <h2 class="title">Macaron</h2>
+      <p class="phar desc">Macaron Mix of Five</p>
+      <p class="phar price">8.00</p>
+    </div>
+  </div>
+  
+  <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-tiramisu-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-tiramisu-desktop.jpg" alt="" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      
+      <button class="btn add-btn" data-cake="Tiramisu"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      <h2 class="title">Tiramisu</h2>
+      <p class="phar desc">Classic Tiramisu</p>
+      <p class="phar price">5.50</p>
+    </div>
+  </div>
+  
+  <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-baklava-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-baklava-desktop.jpg" alt="" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      
+      <button class="btn add-btn" data-cake="Baklava"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      <h2 class="title">Baklava</h2>
+      <p class="phar desc">Pistachio Baklava</p>
+      <p class="phar price">4.00</p>
+    </div>
+  </div>
+  
+  <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-meringue-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-meringue-desktop.jpg" alt="" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      <button class="btn add-btn" data-cake="Pie"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      
+      <h2 class="title">Pie</h2>
+      <p class="phar desc">Lemon Meringue Pie</p>
+      <p class="phar price">5.00</p>
+    </div>
+  </div>
+  
+  <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-cake-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-cake-desktop.jpg" alt="" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      
+      <button class="btn add-btn" data-cake="Cake"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      <h2 class="title">Cake</h2>
+      <p class="phar desc">Red Velvet Cake</p>
+      <p class="phar price">4.50</p>
+    </div>
+  </div>
+  
+  <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-brownie-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-brownie-desktop.jpg" alt="" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      
+      <button class="btn add-btn" data-cake="Brownie"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      <h2 class="title">Brownie</h2>
+      <p class="phar desc">Salted Caramel Brownie</p>
+      <p class="phar price">4.50</p>
+    </div>
+  </div>
+  
+  <div class="item">
+    <picture class="item-image">
+      <source srcset="assets/images/image-panna-cotta-mobile.jpg" media="(max-width: 992px)">
+      <img src="assets/images/image-panna-cotta-desktop.jpg" alt="" class="item-image" id="img-1">
+    </picture>
+    <div class="card-body">
+      
+      <button class="btn add-btn" data-cake="Panna Cotta"><img src="assets/images/icon-add-to-cart.svg" alt="" class="add-icon"><p class="phar add-phar">Add to Cart</p></button>
+      <h2 class="title">Panna Cotta</h2>
+      <p class="phar desc">Vanilla Panna Cotta</p>
+      <p class="phar price">6.50</p>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="right">
+
+    <h3 class="items-header">Your Cart (<span class="quantity">0</span>)</h3>
+    <div class="card-items">
+      <img src="assets/images/illustration-empty-cart.svg" alt="" class="empty-items-img">
+      <p class="phar muted">Your added items will appear here</p>
+    </div>
+  </div>
+  
+
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Dušić Saša</a>.
+  </div>
+</body>
+</html>
